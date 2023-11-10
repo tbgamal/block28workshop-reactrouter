@@ -1,20 +1,16 @@
-
 import './App.css'
 import { Route, Routes, Link } from 'react-router-dom'
 import Blue from './components/Blue'
 import Red from './components/Red'
 import Home from './components/Home'
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
     <>
       <div id="container">
-        <div id="navbar">
-          <Link to="/">home</Link>
-          <Link to="/blue">blue</Link>
-          <Link to="/red">red</Link>
-        </div>
+        <Navbar />
         <div id="main-section">
           <Routes>
             <Route path ="/" element= {<Home />} />
